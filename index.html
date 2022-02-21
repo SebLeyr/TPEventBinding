@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="monApp" class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+        <h1>TP v-on</h1>
+        <input v-on:input="capterEventInput($event)" type="text">
+        <p class="mx-3">{{texte}}</p>
+        <input v-on:input="capterEventKeyPress($event)" type="text">
+        <p class="mx-3">{{texte2}}</p>
+        <button v-on:click="capterEventClick($event)" type="button" class="btn btn-info">Alerte</button>
+</body>
+</html>
