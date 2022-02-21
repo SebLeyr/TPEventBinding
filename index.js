@@ -7,12 +7,13 @@ Vue.createApp({
     },
     methods : {
         capterEventInput(event){
-            console.log(event);
             this.texte = event.target.value;
         },
         capterEventKeyPress(event) {
-            console.log(event);
             this.texte2 = event.target.value;
         },
+        capterEventClick(event) {
+            alert("Alerte générale");
+        }
     }
 }).mount('#monApp');
